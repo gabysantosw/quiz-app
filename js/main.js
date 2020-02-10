@@ -127,6 +127,9 @@ function handleChoiceClick(event) {
     clicked.classList.remove('is-danger');
     clicked.classList.remove('is-success');
 
+    // remove focus on clicked button
+    clicked.blur();
+
     // update question tracker and go to next question
     currentQuestion++;
     if (currentQuestion === currentQuiz.length) {
@@ -134,8 +137,6 @@ function handleChoiceClick(event) {
       endGame();
 
     } else {
-      // remove focus on clicked button
-      clicked.blur();
 
       // go to next question
       getQuestion(currentQuestion);
