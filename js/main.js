@@ -73,6 +73,7 @@ function startGame(pressedButton) {
   // fill initial ui
   currentQuestion = 0;
   progressTextUI.textContent = `${currentQuestion}/${currentQuiz.length}`;
+  progressBarUI.value = 0;
   getQuestion(currentQuestion);
   
   // go to game screen
@@ -158,11 +159,12 @@ function handleChoiceClick(event) {
       // game has finished
       endGame();
     } else {
-      //
-      gameScreenUI.focus;
+      // remove focus on clicked button
+      clicked.blur();
 
       // go to next question
       getQuestion(currentQuestion);
+
 
       // update progress
       progressTextUI.textContent = `${currentQuestion}/${currentQuiz.length}`;
