@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How-the-web Quiz</title>
+
+  <!-- *** styles *** -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    button {
+      cursor: pointer;
+    }
+
+    .progress {
+      max-width: 20rem;
+      margin: 0 auto;
+    }
+  </style>
+
+  <!-- *** scripts *** -->
+  <script defer src="./js/main.js"></script>
+</head>
+<body class="has-background-grey-lighter">
+  <div class="hero is-fullheight">
+    
+    <header class="navbar has-background-light">
+      <div class="container">
+        <a class="navbar-brand navbar-item has-text-link" href="./">
+          <span class="is-size-5 is-family-monospace">How-the-web-</span>
+          <span class="is-size-6 has-text-weight-bold">Quiz</span>
+        </a>
+      </div>
+    </header>
+
+    <section id="js-start-screen" class="hero-body section has-text-centered is-hidden">
+      <div class="section container">
+        <h1 class="title">How the web works?</h1>
+        <p class="is-size-6">
+          Test your knowledge on the concepts covered on 
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions#How_the_Web_works">How the web works? </a>
+          by 
+          <a href="https://developer.mozilla.org">MDN</a>
+        </p>
+        
+        <div class="section">
+          <button id="js-start" class="button is-link is-rounded is-medium">
+            Quick Game
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="js-game-screen" class="hero-body has-text-centered is-hidden">
+      <div class="container">
+        <p id="js-question" class="is-size-5">asdfasdfdsf</p>
+        <div id="js-choices" class="section">
+          <div class="columns">
+            <div class="column">
+              <button class="button is-link is-outlined is-large is-fullwidth">asdf</button>
+            </div>
+            <div class="column">
+              <button class="button is-link is-outlined is-large is-fullwidth">asdf</button>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <button class="button is-link is-outlined is-large is-fullwidth">asdf</button>
+            </div>
+            <div class="column">
+              <button class="button is-link is-outlined is-large is-fullwidth">asdf</button>
+            </div>
+          </div>
+        </div>
+        
+          <p id="js-progress-text" class="tag has-background-grey-lighter is-size-5 has-text-link">0/X</p>
+          <progress id="js-progress-bar" class="progress is-link" value="0" max="100"></progress>
+      </div>
+    </section>
+
+    <section id="js-end-screen" class="hero-body section has-text-centered">
+      <div class="section container">
+        <h2 class="title is-spaced">You completed the quiz!</h2>
+        <p class="subtitle is-size-5">Your result:</p>
+
+          <p class="tags has-addons is-inline-flex">
+            <span id="js-correct-amount" class="tag is-dark is-medium">0</span>
+            <span class="tag is-success is-medium">Correct</span>
+          </p>
+          <p class="tags has-addons is-inline-flex">
+            <span id="js-wrong-amount" class="tag is-dark is-medium">0</span>
+            <span class="tag is-danger is-medium">Wrong</span>
+          </p>
+
+
+        <div class="section">
+          <button id="js-again" class="button is-link is-rounded is-medium">
+            Play Again
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

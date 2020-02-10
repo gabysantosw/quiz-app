@@ -1,0 +1,38 @@
+[
+  {
+    "question": "I love...",
+    "answer": "Laia",
+    "choices": [
+      "222",
+      "333",
+      "444"
+    ]
+  },
+  {
+    "question": "I adore...",
+    "answer": "LAIA",
+    "choices": [
+      "1111",
+      "333",
+      "444"
+    ]
+  },
+  {
+    "question": "I miss...",
+    "answer": "Laiaaa",
+    "choices": [
+      "1111",
+      "333",
+      "444"
+    ]
+  },
+  {
+    "question": "Laia?",
+    "answer": "Papaya!!",
+    "choices": [
+      "1111",
+      "333",
+      "444"
+    ]
+  }
+]
