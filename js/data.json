@@ -1,38 +1,38 @@
 [
   {
-    "question": "I love...",
-    "answer": "Laia",
+    "question": "An address system that keeps track of web documents and specifies where a resource can be found on the internet",
+    "answer": "URL",
     "choices": [
-      "222",
-      "333",
-      "444"
+      "HTTP",
+      "HTML",
+      "Hyperlink"
     ]
   },
   {
-    "question": "I adore...",
-    "answer": "LAIA",
+    "question": "A network transfer protocol to find documents between a server and the browser",
+    "answer": "HTTP",
     "choices": [
-      "1111",
-      "333",
-      "444"
+      "URL",
+      "HTML",
+      "DNS"
     ]
   },
   {
-    "question": "I miss...",
-    "answer": "Laiaaa",
+    "question": "A text string tied to an URL, used to jump from one document to another.",
+    "answer": "Hyperlinks",
     "choices": [
-      "1111",
-      "333",
-      "444"
+      "HTTP",
+      "DNS",
+      "URL"
     ]
   },
   {
-    "question": "Laia?",
-    "answer": "Papaya!!",
+    "question": "It provies a human-readable address to access a website on the internet",
+    "answer": "Domain Name",
     "choices": [
-      "1111",
-      "333",
-      "444"
+      "HTML",
+      "Hyperlinks",
+      "Testing"
     ]
   }
 ]

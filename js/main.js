@@ -54,24 +54,11 @@ function startGame(pressedButton) {
   // setup
   currentQuiz = [];
   answersGiven = [];
+  currentQuestion = 0;
 
   // fill current quiz 
   currentQuiz = getRandomizedFrom(quizData, availableQuestions);
-  // let takenQuestions = [];
-  // while (currentQuiz.length < availableQuestions) {
-  //   // get a random question
-  //   let random = getRandomfromZeroTo(quizData.length);
-
-  //   // if question hasn't been used
-  //   if (!takenQuestions.includes(random)) {
-  //     // keeping track of taken questions
-  //     takenQuestions.push(random);
-  //     currentQuiz.push(quizData[random]);
-  //   }
-  // }
   
-  // fill initial ui
-  currentQuestion = 0;
   progressTextUI.textContent = `${currentQuestion}/${currentQuiz.length}`;
   progressBarUI.value = 0;
   getQuestion(currentQuestion);
@@ -91,19 +78,6 @@ function getQuestion(number) {
   let choices = [currentQuiz[number].answer, ...currentQuiz[number].choices];
   // randomize
   let randomChoices = getRandomizedFrom(choices);
-  // let randomChoices = [];
-  // let takenChoices = [];
-  // while (randomChoices.length < choices.length) {
-  //   // get a random question
-  //   let random = getRandomfromZeroTo(choices.length);
-
-  //   // if choice hasn't been used
-  //   if (!takenChoices.includes(random)) {
-  //     // keeping track of taken choices
-  //     takenChoices.push(random);
-  //     randomChoices.push(choices[random]);
-  //   }
-  // }
 
   // fill ui with choices
   for (let index in choicesUI) {
@@ -158,13 +132,13 @@ function handleChoiceClick(event) {
     if (currentQuestion === currentQuiz.length) {
       // game has finished
       endGame();
+
     } else {
       // remove focus on clicked button
       clicked.blur();
 
       // go to next question
       getQuestion(currentQuestion);
-
 
       // update progress
       progressTextUI.textContent = `${currentQuestion}/${currentQuiz.length}`;
