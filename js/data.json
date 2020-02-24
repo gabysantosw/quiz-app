@@ -34,5 +34,23 @@
       "Hyperlinks",
       "Testing"
     ]
+  },
+  {
+    "question": "Unique address or identifier that belongs to a device linked to a network, it's made of a series of numbers separated by dots",
+    "answer": "IP",
+    "choices": [
+      "Hyperlinks",
+      "HTTP",
+      "DNS"
+    ]
+  },
+  {
+    "question": "A computer that stores a website's component files, it's connected to the internect and supports data interchange with other devices connected to the web",
+    "answer": "Web server",
+    "choices": [
+      "Web site",
+      "Hyperlinks",
+      "Domain name"
+    ]
   }
 ]
