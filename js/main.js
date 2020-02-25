@@ -46,7 +46,7 @@ function loadData(event) {
 
 function startGame(pressedButton) {
   // handle when data amount is less than desired questions amount
-  let availableQuestions = QUESIONS_AMOUNT
+  let availableQuestions = QUESIONS_AMOUNT;
   if (QUESIONS_AMOUNT > quizData.length) {
     availableQuestions = quizData.length;
   }
@@ -76,6 +76,7 @@ function getQuestion(number) {
 
   // get choices
   let choices = [currentQuiz[number].answer, ...currentQuiz[number].choices];
+  
   // randomize
   let randomChoices = getRandomizedFrom(choices);
 
@@ -159,7 +160,7 @@ function getRandomizedFrom(array, desiredSize = array.length) {
   let usedElements = [];
 
   while (randomArray.length < desiredSize) {
-    let random = getRandomfromZeroTo(desiredSize);
+    let random = getRandomfromZeroTo(array.length);  
 
     // only append if it hasn't been used
     if (!usedElements.includes(random)) {

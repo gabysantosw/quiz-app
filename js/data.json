@@ -52,5 +52,41 @@
       "Hyperlinks",
       "Domain name"
     ]
+  },
+  {
+    "question": "A global system that takes a human-readable name and translates it into it's IP",
+    "answer": "DNS",
+    "choices": [
+      "Web site",
+      "Hyperlinks",
+      "Domain name"
+    ]
+  },
+  {
+    "question": "A worldwide network of connections between machines",
+    "answer": "Internet",
+    "choices": [
+      "DNS",
+      "Hyperlinks",
+      "WWW"
+    ]
+  },
+  {
+    "question": "Interconnected system of public webpages that uses the HTTP protocol",
+    "answer": "WWW",
+    "choices": [
+      "Web site",
+      "HTML",
+      "IP"
+    ]
+  },
+  {
+    "question": "Descriptive language that specifies a webpage structure and semantics",
+    "answer": "HTML",
+    "choices": [
+      "CSS",
+      "DNS",
+      "WWW"
+    ]
   }
 ]
