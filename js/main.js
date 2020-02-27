@@ -128,8 +128,9 @@ function handleChoiceClick(event) {
     clicked.classList.remove('is-danger');
     clicked.classList.remove('is-success');
 
-    // remove focus on clicked button
+    // remove focus and active states on clicked button
     clicked.blur();
+    clicked.classList.remove('hasactive');
 
     // update question tracker and go to next question
     currentQuestion++;
